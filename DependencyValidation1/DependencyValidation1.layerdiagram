@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="e6dfc3d9-94d4-45ad-b8cc-22309b912934" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="6aa2c7f2-63b5-45a3-a187-7a21364548bf" name="DotNetRemoting">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="8ebe1b90-1b68-432d-ae3f-e0142dbcf341" direction="Forward">
+          <layerMoniker Id="6eb7fc4b-adb9-4775-9e44-5f5a912d18d4" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="8764cb06-616b-4426-91d2-5ba153048bfc" name="DotNetRemoting">
+          <ArtifactNode Label="DotNetRemoting" Category="CodeSchema_Project" Id="(Assembly=&quot;$(PersonalUri)/Visual Studio 2017/Projects/DotNetRemoting/DotNetRemoting/DotNetRemoting.csproj&quot;)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=DotNetRemoting)" Label="DotNetRemoting.exe" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.exe" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="83559de0-ffc5-4c4a-a4d4-3eeac482229c" name="MyClient">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="7854a5af-b78b-496b-9d2a-ba7f3a5123e2" direction="Forward">
+          <layerMoniker Id="6eb7fc4b-adb9-4775-9e44-5f5a912d18d4" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="fc4cc129-d1e8-4a40-a04c-cf945769d436" direction="Forward">
+          <layerMoniker Id="6aa2c7f2-63b5-45a3-a187-7a21364548bf" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="ff62b177-c74b-4587-bab2-34639e5e9e29" name="MyClient">
+          <ArtifactNode Label="MyClient" Category="CodeSchema_Project" Id="(Assembly=&quot;$(PersonalUri)/Visual Studio 2017/Projects/DotNetRemoting/MyClient/MyClient.csproj&quot;)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=MyClient)" Label="MyClient.exe" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.exe" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="6eb7fc4b-adb9-4775-9e44-5f5a912d18d4" name="MyProduct">
+      <references>
+        <reference Id="be1fdce4-d6fb-4cf7-b64b-3ce267774171" name="MyProduct">
+          <ArtifactNode Label="MyProduct" Category="CodeSchema_Project" Id="(Assembly=&quot;$(PersonalUri)/Visual Studio 2017/Projects/DotNetRemoting/MyProduct/MyProduct.csproj&quot;)">
+            <Category Ref="File" />
+          </ArtifactNode>
+          <ExpandedNode Id="(Assembly=MyProduct)" Label="MyProduct.dll" Category="CodeSchema_Assembly">
+            <Category Ref="FileSystem.Category.FileOfType.dll" />
+            <LinkCategory Ref="Produces" />
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+  </layers>
+</layerModel>
